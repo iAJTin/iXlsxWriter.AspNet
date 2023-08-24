@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+	<metadata>
+		<id>iXlsxWriter.AspNet</id>
+		<version>1.0.1</version>
+		<title>iXlsxWriter.AspNet</title>
+		<authors>iAJTin</authors>
+		<owners>iAJTin</owners>
+    <readme>.\README.md</readme>
+		<license type="expression">MIT</license>
+		<projectUrl>https://github.com/iAJTin/iXlsxWriter.AspNet</projectUrl>
+		<icon>.\iXlsxWriter.AspNet.png</icon>
+		<iconUrl>https://raw.githubusercontent.com/iAJTin/iXlsxWriter.AspNet/master/nuget/iXlsxWriter.AspNet.png</iconUrl>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<description>
+      iXlsxWriter.AspNet, extends iXlsxWriter to work in AspNet (FullFramework) projects, contains extension methods to download XlsxInput instances as well as OutputResult, facilitating its use in this environment
+    </description>
+		<copyright>Copyright © 2023 iAJTin</copyright>
+		<tags>iXlsxWriter Xlsx Writer Excel Office iTin</tags>
+		<repository type="git" url="https://github.com/iAJTin/iXlsxWriter.AspNet"/>
+    <dependencies>
+      <group targetFramework="net461">
+        <dependency id="iXlsxWriter.Abstractions" version="1.0.1" />
+      </group>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="iXlsxWriter.Abstractions" version="1.0.1" />
+      </group>
+      <group targetFramework=".NETStandard2.1">
+        <dependency id="iXlsxWriter.Abstractions" version="1.0.1" />
+      </group>
+      <group targetFramework="net60">
+        <dependency id="iXlsxWriter.Abstractions" version="1.0.1" />
+      </group>
+    </dependencies>
+  </metadata>
+	<files>
+    <file src=".\README.md" target="." />
+    <file src="..\README.txt" target="." />
+    <file src=".\iXlsxWriter.AspNet.png" target="." />
+		<file src="..\src\lib\bin\Debug\**" target="lib" exclude="**\*.deps.json;**\*.pdb;" />
+	</files>
+</package>
